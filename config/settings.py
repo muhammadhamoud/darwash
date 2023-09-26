@@ -31,7 +31,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = ['darwashco.com', 'www.darwashco.com']
+ALLOWED_HOSTS = ['darwashco.com', 'www.darwashco.com','*']
 
 # if DEBUG:
 #     ALLOWED_HOSTS += ['*']

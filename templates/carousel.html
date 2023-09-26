@@ -18,8 +18,8 @@
             
             <div class="container">
                 <div class="carousel-caption{% if forloop.counter0 == 5 %} text-end{% elif forloop.counter0 == 1 %} text-center{% endif %}" style="color: aliceblue;">
-                    <h1 class="mb-3">{{ marketing.name }}</h1>
-                    <p class="mb-5">{{ marketing.description }}</p>
+                    <h1 class="mb-3 mb-sm-4">{{ marketing.name }}</h1>
+                    <p class="text-sm">{{ marketing.description }}</p>
                     <p><a class="btn btn-lg btn-secondary" href="{% url 'contact_view' %}">Get Quote</a></p>
                 </div>
             </div>
