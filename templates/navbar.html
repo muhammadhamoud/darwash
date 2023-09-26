@@ -1,0 +1,85 @@
+{% load static %}
+
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-expand-md navbar-dark fixed-top bg-dark" id="mainNav">
+          <div class="container">
+              <h1><a class="navbar-brand font-weight-bold" href="{% url 'index' %}">
+                <img src="{{site_information.logo.url}}" width="30" height="30" class="d-inline-block align-top me-2" alt="">  
+                {{site_information.site_name}}
+              </a></h1>
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ms-auto my-2 my-lg-0">
+
+                      <!-- <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#teammembers">Our Team</a></li> -->
+
+                      <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+                      <li class="nav-item"><a class="nav-link" href="{% url 'contact_view' %}">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+
+
+<!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Fixed navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav> -->
+
+  <!-- <nav class="py-2 bg-body-tertiary border-bottom fixed-top ">
+    <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4">{{site_information.site_name}}</span>
+    </a>
+    
+    <div class="container d-flex flex-wrap">
+      <ul class="nav me-auto">
+        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2 active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Services</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Conctact Us</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">About</a></li>
+      </ul>
+      <ul class="nav">
+        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Login</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Sign up</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <header class="py-3 mb-4 border-bottom">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">{{site_information.site_name}}</span>
+      </a>
+    </div>
+  </header> -->
